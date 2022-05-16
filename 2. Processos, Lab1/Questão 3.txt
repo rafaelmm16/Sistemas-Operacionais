@@ -1,0 +1,7 @@
+a) Não, como eu fiz uma função pra cada thread ele faz de forma aleatória, chamando parte de cada thread.
+
+b) O uso real aumentara constantemente ao aumento da quantidade de números, já a do usuário fica bem parecido com o real, porem a sistema não irá se sobrecarregar de tal forma.
+
+c) Como meu notebook só tem 4 núcleos, o desempenho foi não tão eficiente, ficando defasado no quinto núcleo.
+
+d) Não, aparentemente quando esses threads são gerados e quando elas vão ser chamadas pela join esse processo se torna de certa forma aleatório, sendo assim a cada execução o intervalo muda.

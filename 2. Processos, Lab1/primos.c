@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <unistd.h>
+#include <time.h>
+
+int i = 0;
 
 int primo(int value) {
 	int i = 2;
@@ -12,7 +15,7 @@ int primo(int value) {
 void* thread_a(void * arg){
     int res = 0;
 
-	for(int i = 1; i<=250; i++)
+	for(i = 1; i<=250; i++)
 	{
 		res = primo(i);
 		if(res) {
@@ -27,7 +30,7 @@ void* thread_a(void * arg){
 void* thread_b(void * arg){
     int res = 0;
 
-	for(int i = 251; i<=500; i++)
+	for(i = 251; i<=500; i++)
 	{
 		res = primo(i);
 		if(res) {
@@ -41,7 +44,7 @@ void* thread_b(void * arg){
 void* thread_c(void * arg){
     int res = 0;
 
-	for(int i = 501; i<=750; i++)
+	for(i = 501; i<=750; i++)
 	{
 		res = primo(i);
 		if(res) {
@@ -55,7 +58,7 @@ void* thread_c(void * arg){
 void* thread_d(void * arg){
     int res = 0;
 
-	for(int i = 751; i<=1000; i++)
+	for(i = 751; i<=1000; i++)
 	{
 		res = primo(i);
 		if(res) {
